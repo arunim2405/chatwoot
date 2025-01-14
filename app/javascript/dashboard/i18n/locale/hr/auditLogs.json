@@ -10,12 +10,12 @@
     "LIST": {
       "404": "Na ovom korisničkom računu nema dostupnih Audit Logova.",
       "TITLE": "Upravljanje Audit Logovima",
-      "DESC": "Audit Logovi su tragovi događaja i akcija u EazyGuest sustavu.",
-      "TABLE_HEADER": [
-        "Korisnik",
-        "Akcija",
-        "IP adresa"
-      ]
+      "DESC": "Audit Logovi su tragovi događaja i akcija u Chatwoot sustavu.",
+      "TABLE_HEADER": {
+        "ACTIVITY": "Korisnik",
+        "TIME": "Akcija",
+        "IP_ADDRESS": "IP adresa"
+      }
     },
     "API": {
       "SUCCESS_MESSAGE": "Audit Logovi su uspješno dohvaćeni",
