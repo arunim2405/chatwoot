@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Choisir un canal",
-        "BODY": "Choisissez le fournisseur que vous souhaitez intégrer avec Chatwoot."
+        "BODY": "Choisissez le fournisseur que vous souhaitez intégrer avec EazyGuest."
       },
       "INBOX": {
         "TITLE": "Créer une boîte de réception",

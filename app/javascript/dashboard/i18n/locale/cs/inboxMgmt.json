@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Vybrat kanál",
-        "BODY": "Vyberte si poskytovatele, který chcete integrovat do Chatwoot."
+        "BODY": "Vyberte si poskytovatele, který chcete integrovat do EazyGuest."
       },
       "INBOX": {
         "TITLE": "Vytvořit doručenou poštu",

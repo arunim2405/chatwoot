@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Kanal Seçin",
-        "BODY": "Chatwoot ile entegre etmek istediğiniz sağlayıcıyı seçin."
+        "BODY": "EazyGuest ile entegre etmek istediğiniz sağlayıcıyı seçin."
       },
       "INBOX": {
         "TITLE": "Gelen Kutusu Oluştur",
