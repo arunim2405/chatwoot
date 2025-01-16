@@ -10,7 +10,7 @@
     "LIST": {
       "404": "Na ovom korisničkom računu nema dostupnih Audit Logova.",
       "TITLE": "Upravljanje Audit Logovima",
-      "DESC": "Audit Logovi su tragovi događaja i akcija u Chatwoot sustavu.",
+      "DESC": "Audit Logovi su tragovi događaja i akcija u EazyGuest sustavu.",
       "TABLE_HEADER": {
         "ACTIVITY": "Korisnik",
         "TIME": "Akcija",

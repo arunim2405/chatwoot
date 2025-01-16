@@ -10,7 +10,7 @@
     "LIST": {
       "404": "Það eru engar aðgerðaskrár tiltækar á þessum reikning.",
       "TITLE": "Stjórna Aðgerðaskrám",
-      "DESC": "Aðgerðaskrár heldur utan um alla atburði og aðgerðir í Chatwoot.",
+      "DESC": "Aðgerðaskrár heldur utan um alla atburði og aðgerðir í EazyGuest.",
       "TABLE_HEADER": {
         "ACTIVITY": "Notandi",
         "TIME": "Aðgerð",

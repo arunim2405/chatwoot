@@ -10,7 +10,7 @@
     "LIST": {
       "404": "Es gibt keine Audit-Protokolle in diesem Konto.",
       "TITLE": "Audit-Protokolle verwalten",
-      "DESC": "Auditprotokolle sind Spuren für Ereignisse und Aktionen in einem Chatwoot-System.",
+      "DESC": "Auditprotokolle sind Spuren für Ereignisse und Aktionen in einem EazyGuest-System.",
       "TABLE_HEADER": {
         "ACTIVITY": "User",
         "TIME": "Action",
