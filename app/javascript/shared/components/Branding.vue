@@ -28,9 +28,8 @@ export default {
     brandRedirectURL() {
       try {
         const referrerHost = this.$store.getters['appConfig/getReferrerHost'];
-        const baseURL = `${this.globalConfig.widgetBrandURL}?utm_source=${
-          referrerHost ? 'widget_branding' : 'survey_branding'
-        }`;
+        const baseURL = `https://app.eazyguest.io?utm_source=${referrerHost ? 'widget_branding' : 'survey_branding'
+          }`;
         if (referrerHost) {
           return `${baseURL}&utm_referrer=${referrerHost}`;
         }
@@ -38,6 +37,7 @@ export default {
       } catch (e) {
         // Suppressing the error as getter is not defined in some cases
       }
+
       return '';
     },
   },
@@ -45,21 +45,10 @@ export default {
 </script>
 
 <template>
-  <div
-    v-if="globalConfig.brandName && !disableBranding"
-    class="px-0 py-3 flex justify-center"
-  >
-    <a
-      :href="brandRedirectURL"
-      rel="noreferrer noopener nofollow"
-      target="_blank"
-      class="branding--link justify-center items-center leading-3"
-    >
-      <img
-        class="branding--image"
-        :alt="globalConfig.brandName"
-        :src="globalConfig.logoThumbnail"
-      />
+  <div v-if="globalConfig.brandName && !disableBranding" class="px-0 py-3 flex justify-center">
+    <a :href="brandRedirectURL" rel="noreferrer noopener nofollow" target="_blank"
+      class="branding--link justify-center items-center leading-3">
+      <img class="branding--image" :alt="globalConfig.brandName" :src="globalConfig.logoThumbnail" />
       <span>
         {{ useInstallationName($t('POWERED_BY'), globalConfig.brandName) }}
       </span>
