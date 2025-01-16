@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Izaberite kanal",
-        "BODY": "Izaberte provajdera kojeg želite da integrišete sa Chatwoot-om."
+        "BODY": "Izaberte provajdera kojeg želite da integrišete sa EazyGuest-om."
       },
       "INBOX": {
         "TITLE": "Napravi prijemno sanduče",

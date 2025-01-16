@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Pasirinkti Kanalą",
-        "BODY": "Pasirinkite paslaugų teikėją, kurį norite integruoti su Chatwoot."
+        "BODY": "Pasirinkite paslaugų teikėją, kurį norite integruoti su EazyGuest."
       },
       "INBOX": {
         "TITLE": "Sukurti Gautų Laiškų Aplanką",
