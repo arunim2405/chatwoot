@@ -44,7 +44,7 @@ export const getters = {
   },
   isFeatureEnabledonAccount: $state => (id, featureName) => {
     const { features = {} } = findRecordById($state, id);
-    return features[featureName] || false;
+    return features[featureName] || true; // TODO: Remove true and set to false once all features are migrated
   },
 };
 
