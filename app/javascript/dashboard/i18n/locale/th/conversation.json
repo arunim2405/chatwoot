@@ -54,6 +54,7 @@
     "SUCCESS_DELETE_MESSAGE": "ลบข้อความสำเร็จเเล้ว",
     "FAIL_DELETE_MESSSAGE": "ไม่สามารถลบข้อความได้ โปรดลองใหม่อีกครั้ง",
     "NO_RESPONSE": "ไม่มีการตอบกลับ",
+    "RESPONSE": "Response",
     "RATING_TITLE": "การประเมิน",
     "FEEDBACK_TITLE": "ผลตอบรับ",
     "REPLY_MESSAGE_NOT_FOUND": "Message not available",
@@ -116,6 +117,7 @@
       "PENDING": "ทำเครื่องหมายว่าอยู่ระหว่างดำเนินการ",
       "RESOLVED": "Mark as resolved",
       "MARK_AS_UNREAD": "Mark as unread",
+      "MARK_AS_READ": "Mark as read",
       "REOPEN": "เปิดการสนทนาอีกครั้ง",
       "SNOOZE": {
         "TITLE": "Snooze",
@@ -352,5 +354,11 @@
     "ONE": "{user} is typing",
     "TWO": "{user} and {secondUser} are typing",
     "MULTIPLE": "{user} and {count} others are typing"
+  },
+  "COPILOT": {
+    "TRY_THESE_PROMPTS": "Try these prompts"
+  },
+  "GALLERY_VIEW": {
+    "ERROR_DOWNLOADING": "Unable to download attachment. Please try again"
   }
 }
