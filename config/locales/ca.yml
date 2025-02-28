@@ -64,7 +64,7 @@ ca:
         name: no hauria de començar ni acabar amb símbols, i no hauria de tenir caràcters < > / \ @.
     custom_filters:
       number_of_records: S'ha arribat al límit. El nombre màxim de filtres personalitzats permesos per a un usuari per compte és de 50.
-      invalid_attribute: 'Clau d''atribut no vàlida: [%{key}]. La clau hauria de ser una de [%{allowed_keys}] o un atribut personalitzat definit al compte.'
+      invalid_attribute: "Clau d'atribut no vàlida: [%{key}]. La clau hauria de ser una de [%{allowed_keys}] o un atribut personalitzat definit al compte."
       invalid_operator: Operador no vàlid. Els operadors permesos per a %{attribute_name} son [%{allowed_keys}].
       invalid_query_operator: Query operator must be either "AND" or "OR".
       invalid_value: Valor no vàlid. Els valors proporcionats per a %{attribute_name} no són vàlids
@@ -123,19 +123,19 @@ ca:
       conversation_creation: 'Una conversa (#%{display_id}) ha estat creada a %{inbox_name}'
       conversation_assignment: 'Una conversa (#%{display_id}) ha estat assignada a tu'
       assigned_conversation_new_message: 'Es crea un missatge nou a la conversa (#%{display_id})'
-      conversation_mention: 'T''han mencionat a la conversa (#%{display_id})'
-      sla_missed_first_response: 'S''ha perdut la primera resposta de l''objectiu de SLA per a la conversa (#%{display_id})'
-      sla_missed_next_response: 'S''ha perdut la següent resposta de l''objectiu de SLA per a la conversa (#%{display_id})'
-      sla_missed_resolution: 'S''ha perdut la resolució de l''objectiu de SLA per a la conversa (#%{display_id})'
+      conversation_mention: "T'han mencionat a la conversa (#%{display_id})"
+      sla_missed_first_response: "S'ha perdut la primera resposta de l'objectiu de SLA per a la conversa (#%{display_id})"
+      sla_missed_next_response: "S'ha perdut la següent resposta de l'objectiu de SLA per a la conversa (#%{display_id})"
+      sla_missed_resolution: "S'ha perdut la resolució de l'objectiu de SLA per a la conversa (#%{display_id})"
     attachment: 'Adjunt'
     no_content: 'Sense contingut'
   conversations:
     messages:
-      instagram_story_content: '%{story_sender} t''ha mencionat a la història: '
+      instagram_story_content: "%{story_sender} t'ha mencionat a la història: "
       instagram_deleted_story_content: Aquesta història ja no està disponible.
       deleted: Aquest missatge a sigut eliminat
       delivery_status:
-        error_code: 'Codi d''error: %{error_code}'
+        error_code: "Codi d'error: %{error_code}"
     activity:
       status:
         resolved: 'La conversa va ser marcada com resolta per %{user_name}'
@@ -143,16 +143,16 @@ ca:
         open: 'La conversa es va reobrir per %{user_name}'
         pending: 'La conversa va ser marcada com pendent per %{user_name}'
         snoozed: '%{user_name} ha posposat la conversa'
-        auto_resolved: 'El sistema ha marcat que la conversa s''ha resolt a causa de %{duration} dies d''inactivitat'
+        auto_resolved: "El sistema ha marcat que la conversa s'ha resolt a causa de %{duration} dies d'inactivitat"
         system_auto_open: El sistema ha reobert la conversa a causa d'un nou missatge entrant.
       priority:
         added: '%{user_name} ha establert la prioritat a %{new_priority}'
         updated: '%{user_name} ha canviat la prioritat de %{old_priority} a %{new_priority}'
         removed: '%{user_name} ha eliminat la prioritat'
       assignee:
-        self_assigned: '%{user_name} s''ha auto assignat aquesta conversa'
+        self_assigned: "%{user_name} s'ha auto assignat aquesta conversa"
         assigned: 'Assignada a %{assignee_name} per %{user_name}'
-        removed: '%{user_name} ha tret l''assignació de la conversa'
+        removed: "%{user_name} ha tret l'assignació de la conversa"
       team:
         assigned: 'Assignada a %{team_name} per %{user_name}'
         assigned_with_assignee: 'Assignat a %{assignee_name} mitjançant %{team_name} per %{user_name}'
@@ -168,7 +168,7 @@ ca:
       auto_resolution_message: 'Resolving the conversation as it has been inactive for a while. Please start a new conversation if you need further assistance.'
     templates:
       greeting_message_body: '%{account_name} normalment respon a les poques hores.'
-      ways_to_reach_you_message_body: 'Fes saber a l''equip la forma de posar-nos en contacte amb tu.'
+      ways_to_reach_you_message_body: "Fes saber a l'equip la forma de posar-nos en contacte amb tu."
       email_input_box_message_body: 'Rep les notificacions per correu electrònic'
       csat_input_message_body: 'Si us plau, valoreu la conversa'
     reply:
@@ -195,14 +195,14 @@ ca:
       description: 'Dashboard Apps allow you to create and embed applications that display user information, orders, or payment history, providing more context to your customer support agents.'
     dyte:
       name: 'Dyte'
-      description: 'Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from Chatwoot.'
+      description: 'Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from EazyGuest.'
       meeting_name: '%{agent_name} ha iniciat una reunió'
     slack:
       name: 'Slack'
-      description: "Integrate Chatwoot with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
+      description: "Integrate EazyGuest with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
     webhooks:
       name: 'Webhooks'
-      description: 'Webhook events provide real-time updates about activities in your Chatwoot account. You can subscribe to your preferred events, and Chatwoot will send you HTTP callbacks with the updates.'
+      description: 'Webhook events provide real-time updates about activities in your EazyGuest account. You can subscribe to your preferred events, and EazyGuest will send you HTTP callbacks with the updates.'
     dialogflow:
       name: 'Dialogflow'
       description: 'Build chatbots with Dialogflow and easily integrate them into your inbox. These bots can handle initial queries before transferring them to a customer service agent.'

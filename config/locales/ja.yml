@@ -195,20 +195,20 @@ ja:
       description: 'ダッシュボードアプリを使用すると、ユーザー情報、注文、または支払い履歴を表示するアプリケーションを作成して埋め込むことができ、カスタマーサポートエージェントにより多くのコンテキストを提供します。'
     dyte:
       name: 'Dyte'
-      description: 'Dyteは、オーディオおよびビデオ機能をアプリケーションに統合する製品です。この統合により、エージェントはChatwootから直接顧客とビデオ/音声通話を開始できます。'
+      description: 'Dyteは、オーディオおよびビデオ機能をアプリケーションに統合する製品です。この統合により、エージェントはEazyGuestから直接顧客とビデオ/音声通話を開始できます。'
       meeting_name: '%{agent_name} がミーティングを開始しました'
     slack:
       name: 'Slack'
-      description: "ChatwootとSlackを統合して、チームを同期させます。この統合により、新しい会話の通知を受け取り、Slackのインターフェース内で直接応答することができます。"
+      description: 'EazyGuestとSlackを統合して、チームを同期させます。この統合により、新しい会話の通知を受け取り、Slackのインターフェース内で直接応答することができます。'
     webhooks:
       name: 'Webhooks'
-      description: 'Webhookイベントは、Chatwootアカウント内のアクティビティに関するリアルタイムの更新を提供します。希望するイベントを購読すると、Chatwootは更新情報を含むHTTPコールバックを送信します。'
+      description: 'Webhookイベントは、EazyGuestアカウント内のアクティビティに関するリアルタイムの更新を提供します。希望するイベントを購読すると、EazyGuestは更新情報を含むHTTPコールバックを送信します。'
     dialogflow:
       name: 'Dialogflow'
       description: 'Dialogflowでチャットボットを構築し、それらを受信トレイに簡単に統合します。これらのボットは、カスタマーサービスエージェントに転送する前に初期の問い合わせを処理できます。'
     google_translate:
       name: 'Google Translate'
-      description: "Google翻訳を統合して、エージェントが顧客のメッセージを簡単に翻訳できるようにします。この統合は言語を自動的に検出し、エージェントまたは管理者の希望する言語に変換します。"
+      description: 'Google翻訳を統合して、エージェントが顧客のメッセージを簡単に翻訳できるようにします。この統合は言語を自動的に検出し、エージェントまたは管理者の希望する言語に変換します。'
     openai:
       name: 'OpenAI'
       description: 'OpenAIの大規模言語モデルの力を活用して、返信の提案、要約、メッセージの言い換え、スペルチェック、ラベル分類などの機能を提供します。'

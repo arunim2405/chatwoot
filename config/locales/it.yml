@@ -143,7 +143,7 @@ it:
         open: 'La conversazione è stata riaperta da %{user_name}'
         pending: 'La conversazione è stata contrassegnata come in attesa da %{user_name}'
         snoozed: 'La conversazione è stata posticipata da %{user_name}'
-        auto_resolved: 'La conversazione è stata contrassegnata come risolta dal sistema a causa di %{duration} giorni d''inattività'
+        auto_resolved: "La conversazione è stata contrassegnata come risolta dal sistema a causa di %{duration} giorni d'inattività"
         system_auto_open: System reopened the conversation due to a new incoming message.
       priority:
         added: '%{user_name} set the priority to %{new_priority}'
@@ -164,7 +164,7 @@ it:
         added: '%{user_name} added SLA policy %{sla_name}'
         removed: '%{user_name} removed SLA policy %{sla_name}'
       muted: '%{user_name} ha silenziato la conversazione'
-      unmuted: '%{user_name} ha riattivato l''audio della conversazione'
+      unmuted: "%{user_name} ha riattivato l'audio della conversazione"
       auto_resolution_message: 'Resolving the conversation as it has been inactive for a while. Please start a new conversation if you need further assistance.'
     templates:
       greeting_message_body: '%{account_name}, in genere, risponde in poche ore.'
@@ -195,14 +195,14 @@ it:
       description: 'Dashboard Apps allow you to create and embed applications that display user information, orders, or payment history, providing more context to your customer support agents.'
     dyte:
       name: 'Dyte'
-      description: 'Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from Chatwoot.'
+      description: 'Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from EazyGuest.'
       meeting_name: '%{agent_name} has started a meeting'
     slack:
       name: 'Slack'
-      description: "Integrate Chatwoot with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
+      description: "Integrate EazyGuest with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
     webhooks:
       name: 'Webhook'
-      description: 'Webhook events provide real-time updates about activities in your Chatwoot account. You can subscribe to your preferred events, and Chatwoot will send you HTTP callbacks with the updates.'
+      description: 'Webhook events provide real-time updates about activities in your EazyGuest account. You can subscribe to your preferred events, and EazyGuest will send you HTTP callbacks with the updates.'
     dialogflow:
       name: 'Dialogflow'
       description: 'Build chatbots with Dialogflow and easily integrate them into your inbox. These bots can handle initial queries before transferring them to a customer service agent.'
