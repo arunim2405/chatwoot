@@ -42,7 +42,7 @@ fi
 # read getopt’s output this way to handle the quoting right:
 eval set -- "$PARSED"
 
-c=n d=n h=n i=n I=n l=n r=n s=n u=n w=n v=n BRANCH=master SERVICE=web
+c=n d=n h=n i=n I=n l=n r=n s=n u=n w=n v=n BRANCH=f/ezg-v0.0.2 SERVICE=web
 # Iterate options in order and nicely split until we see --
 while true; do
     case "$1" in
@@ -146,7 +146,7 @@ function exit_handler() {
 #   None
 ##############################################################################
 function get_domain_info() {
-  read -rp 'Enter the domain/subdomain for Chatwoot (e.g., chatwoot.domain.com): ' domain_name
+  read -rp 'Enter the domain/subdomain for EazyGuest (e.g., eazyguest.domain.com): ' domain_name
   read -rp 'Enter an email address for LetsEncrypt to send reminders when your SSL certificate is up for renewal: ' le_email
   cat << EOF
 
@@ -341,9 +341,9 @@ function setup_chatwoot() {
   rvm install "ruby-3.3.3"
   rvm use 3.3.3 --default
 
-  git clone https://github.com/chatwoot/chatwoot.git
+  git clone https://github.com/arunim2405/chatwoot.git
   cd chatwoot
-  git checkout "$BRANCH"
+  git checkout f/ezg-v0.0.2
   bundle
   pnpm i
 
@@ -491,7 +491,7 @@ function install() {
   cat << EOF
 
 ***************************************************************************
-              Chatwoot Installation (v$CW_VERSION)
+              EazyGuest Installation (v$CW_VERSION)
 ***************************************************************************
 
 For more verbose logs, open up a second terminal and follow along using,
