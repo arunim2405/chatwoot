@@ -60,7 +60,7 @@ while true; do
             ;;
         -i|--install)
             i=y
-            BRANCH="master"
+            BRANCH="f/ezg-v0.0.2"
             break
             ;;
        -I|--Install)
