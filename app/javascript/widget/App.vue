@@ -345,24 +345,17 @@ export default {
 </script>
 
 <template>
-  <div
-    v-if="!conversationSize && isFetchingList"
-    class="flex items-center justify-center flex-1 h-full bg-n-background"
-    :class="{ dark: prefersDarkMode }"
-  >
+  <div v-if="!conversationSize && isFetchingList" class="flex items-center justify-center flex-1 h-full bg-n-background"
+    :class="{ dark: prefersDarkMode }">
     <Spinner size="" />
   </div>
-  <div
-    v-else
-    class="flex flex-col justify-end h-full"
-    :class="{
-      'is-mobile': isMobile,
-      'is-widget-right': isRightAligned,
-      'is-bubble-hidden': hideMessageBubble,
-      'is-flat-design': isWidgetStyleFlat,
-      dark: prefersDarkMode,
-    }"
-  >
+  <div v-else class="flex flex-col justify-end h-full" :class="{
+    'is-mobile': isMobile,
+    'is-widget-right': isRightAligned,
+    'is-bubble-hidden': hideMessageBubble,
+    'is-flat-design': isWidgetStyleFlat,
+    dark: prefersDarkMode,
+  }">
     <router-view />
   </div>
 </template>

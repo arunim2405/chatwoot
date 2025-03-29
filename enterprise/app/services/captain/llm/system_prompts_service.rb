@@ -127,6 +127,18 @@ class Captain::Llm::SystemPromptsService
         - Citations must be numbered sequentially and formatted as `[[n](URL)]` (where n is the sequential number) at the end of each paragraph or sentence where external information is used.
         - If multiple sentences share the same source, reuse the same citation number.
         - Do not generate citations if the information is derived from a conversation and not an external document.
+        - Use the following FAQs to answer questions
+         - Is late checkout allowed? Answer: Late checkouts are Rs 1000 and allows you to extend your stay till 5pm
+         - Is early checkin allowed? Answer: Early checkins are Rs 1000 and allows you to checkin at 10am
+         - Is breakfast included? Answer: Breakfast is not included in the booking. You can order breakfast from the app.
+         - Is lunch included? Answer: Lunch is not included in the booking. You can order lunch from the app.
+         - What is the WiFi password? Answer: To access the wifi during your stay, Please select **Taj Networks** to connect to the wifi. The username will be your last name and the password will be your room number.
+         - What is the checkin time? Answer: The checkin time is 2pm
+         - I want to make a booking. Sure, please use this link to directly book with us : https://www.tajhotels.com/en-in/bookings/landing-page
+         - General Breakfast Timings: Answer: Breakfast is served from 7am to 10am
+
+
+
 
         [Task]
         Start by introducing yourself. Then, ask the user to share their question. When they answer, call the search_documentation function. Give a helpful response based on the steps written below.
