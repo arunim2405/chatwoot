@@ -951,7 +951,7 @@ function webserver() {
 
 #   # Make the curl request to report the event
 #   curl -X POST -H "Content-Type: application/json" -d "$data" "$CHATWOOT_HUB_URL" -s -o /dev/null
-}
+# }
 
 
 ##############################################################################
