@@ -22,7 +22,7 @@ module Enterprise::MessageTemplates::HookExecutionService
       message_type: :outgoing,
       account_id: conversation.account.id,
       inbox_id: conversation.inbox.id,
-      content: 'Transferring to another agent for further assistance.'
+      content: 'Our team is looking into it and will assist you shortly.'
     )
     conversation.bot_handoff!
   end
