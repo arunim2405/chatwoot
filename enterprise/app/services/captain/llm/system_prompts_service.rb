@@ -142,10 +142,10 @@ class Captain::Llm::SystemPromptsService
                   - I want to make a booking. Sure, please use this link to directly book with us : https://www.whitestoneresorts.com/
                   - How to operate the TV? There are two Remotes available in your room, one for Tata Sky and one for the TV. First turn on the TV using the TV remote and then use the tata sky remote to change channels.
                   - How to operate the AC? There is a panel on the wall beside the bed to operate the AC.
-                  - Smoking is often prohibited in rooms and common areas, and designated smoking areas may be provided.#{' '}
+                  - Smoking is often prohibited in rooms and common areas, and designated smoking areas may be provided.
                   - Pets may be allowed, but there may be restrictions, extra charges, and a requirement to keep pets on a leash in public areas.
-                  - Guests are responsible for any damage caused to the hotel property or other guests' property.#{' '}
-                  - Damage reports and potential charges may be addressed upon check-out.#{' '}
+                  - Guests are responsible for any damage caused to the hotel property or other guests' property.
+                  - Damage reports and potential charges may be addressed upon check-out.
                   - IN HOUSE GUEST ROOM CLEANING WITH Timing (2 PM TO 6 PM)
                   - 3	COMPLIMENTARY WATER BOTTLES PER DAY 2
                   - RO WATER IN FLASK
@@ -157,17 +157,17 @@ class Captain::Llm::SystemPromptsService
                   - Kindly check the Laundry price list and fill up the item name and Number of pieces with signature. All instructions are mentioned on laundry price list."
                   - Ironing charges are 50% of the washing charges.
                   - If you need Mini bar service it will be on chargeable basis. We placed these items in your room.
-                    Pringle chips - 2 , chocolate - 2, biscuit - 2 , Dry fruit - 1#{' '}
+                    Pringle chips - 2 , chocolate - 2, biscuit - 2 , Dry fruit - 1
                   - TEA & COFFEE SUPPLIES - these items are placed in Your room near by tea kettle. If you need extra item you can type  the item name with room number.
                   - BATH ROOM AMENITIES - Soap, Shampoo, Moisturizer , Shower gel , Shower cap , these items are placed in the washroom. If you need extra item you can type the item name with room number.
                   - one extra pillow placed in wardrobe
-                  - HAIR DRYER, Iron with board (On request) - If you need Hairdryer or iron with board dial 333.#{' '}
+                  - HAIR DRYER, Iron with board (On request) - If you need Hairdryer or iron with board dial 333.
                   - Fresh towels placed in the bathroom.Kindly check In bathroom towel stand. If you need  extra you can type  the item name with room number.
                   - If you need to change towel/extra towel dial 333. And exchange with used towel."
                   - Hangers are placed in your room wardrobe.
                   - If you want to use the Safety locker then enter your choice passcode and save your passcode press #.
                   - There is a mini fridge in your room near by TCM counter.
-                  - If you open the tap on the left side, hot water will come and if you open the tap on the right side, cold water will come.#{' '}
+                  - If you open the tap on the left side, hot water will come and if you open the tap on the right side, cold water will come.
                   - Hot water not coming? If you open the tap on the left side and drain 2 min after then  hot water will come and if you open the tap on the right side  cold water will come
                   - kindly mention any kind of problem facing in your room. then  I'll send your complaint in to concern department . Then the concern person will come to your room. and rectify the problem as soon as possible."
                   -	WI-FI PASS WORD
