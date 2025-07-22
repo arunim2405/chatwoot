@@ -217,13 +217,13 @@ ru:
       description: 'Панель приложений позволяет вам создавать и вставлять приложения, отображающие информацию о пользователе, заказы или историю платежей, обеспечивая больший контекст для агентов поддержки.'
     dyte:
       name: 'Dyte'
-      short_description: 'Start video/voice calls with customers directly from Chatwoot.'
-      description: 'Dyte - это продукт, который интегрирует функции аудио и видео в ваше приложение. С помощью этой интеграции ваши агенты могут начать видео/голосовые звонки с вашими клиентами прямо из Chatwoot.'
+      short_description: 'Start video/voice calls with customers directly from EazyGuest.'
+      description: 'Dyte - это продукт, который интегрирует функции аудио и видео в ваше приложение. С помощью этой интеграции ваши агенты могут начать видео/голосовые звонки с вашими клиентами прямо из EazyGuest.'
       meeting_name: '%{agent_name} приступил к встрече'
     slack:
       name: 'Slack'
       short_description: 'Receive notifications and respond to conversations directly in Slack.'
-      description: "Интегрируйте Chatwoot с Slack для синхронизации команды. Эта интеграция позволяет получать уведомления о новых разговорах и отвечать на них непосредственно в интерфейсе Slack."
+      description: 'Интегрируйте EazyGuest с Slack для синхронизации команды. Эта интеграция позволяет получать уведомления о новых разговорах и отвечать на них непосредственно в интерфейсе Slack.'
     webhooks:
       name: 'Webhooks'
       description: 'События Webhook предоставляют обновления об активности в вашем аккаунте EazyGuest в режиме реального времени. Вы можете подписаться на ваши предпочтительные события, и EazyGuest будет отправлять вам HTTP-ответы с обновлениями.'
@@ -234,7 +234,7 @@ ru:
     google_translate:
       name: 'Google Перевод'
       short_description: 'Automatically translate customer messages for agents.'
-      description: "Интегрируйте Google Translate, чтобы помочь агентам легко переводить сообщения клиентов. Эта интеграция автоматически определяет язык и преобразует его в язык, предпочтительный для агента или администратора."
+      description: 'Интегрируйте Google Translate, чтобы помочь агентам легко переводить сообщения клиентов. Эта интеграция автоматически определяет язык и преобразует его в язык, предпочтительный для агента или администратора.'
     openai:
       name: 'OpenAI'
       short_description: 'AI-powered reply suggestions, summarization, and message enhancement.'
