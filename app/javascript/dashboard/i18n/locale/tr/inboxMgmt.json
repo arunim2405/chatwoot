@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Kanal Seçin",
-        "BODY": "EazyGuest ile entegre etmek istediğiniz sağlayıcıyı seçin."
+        "BODY": "Chatwoot ile entegre etmek istediğiniz sağlayıcıyı seçin."
       },
       "INBOX": {
         "TITLE": "Gelen Kutusu Oluştur",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Web sitenizin adını girin"
       },
       "FB": {
-        "HELP": "Not: Oturum açarak, yalnızca Sayfanızın mesajlarına erişebiliriz. Özel mesajlarınıza EazyGuest ile asla erişilemez.",
+        "HELP": "Not: Oturum açarak, yalnızca Sayfanızın mesajlarına erişebiliriz. Özel mesajlarınıza Chatwoot ile asla erişilemez.",
         "CHOOSE_PAGE": "Sayfa Seçin",
         "CHOOSE_PLACEHOLDER": "Listeden bir sayfa seçin",
         "INBOX_NAME": "Gelen Kutusu Adı",
@@ -424,7 +424,51 @@
       },
       "AUTH": {
         "TITLE": "Bir Kanal Seçin",
-        "DESC": "EazyGuest, canlı sohbet widget'ları, Facebook Messenger, Twitter profilleri, WhatsApp, E-postalar vb. olarak kanalları destekler. Özel bir kanal oluşturmak istiyorsanız, API kanalını kullanarak bunu oluşturabilirsiniz. Başlamak için aşağıdaki kanallardan birini seçin."
+        "DESC": "Chatwoot, canlı sohbet widget'ları, Facebook Messenger, Twitter profilleri, WhatsApp, E-postalar vb. olarak kanalları destekler. Özel bir kanal oluşturmak istiyorsanız, API kanalını kullanarak bunu oluşturabilirsiniz. Başlamak için aşağıdaki kanallardan birini seçin.",
+        "TITLE_NEXT": "Complete the setup",
+        "TITLE_FINISH": "Voilà!",
+        "CHANNEL": {
+          "WEBSITE": {
+            "TITLE": "Website",
+            "DESCRIPTION": "Create a live-chat widget"
+          },
+          "FACEBOOK": {
+            "TITLE": "Facebook\n",
+            "DESCRIPTION": "Connect your Facebook page"
+          },
+          "WHATSAPP": {
+            "TITLE": "WhatsApp",
+            "DESCRIPTION": "Support your customers on WhatsApp"
+          },
+          "EMAIL": {
+            "TITLE": "E-Posta",
+            "DESCRIPTION": "Connect with Gmail, Outlook, or other providers"
+          },
+          "SMS": {
+            "TITLE": "SMS",
+            "DESCRIPTION": "Integrate SMS channel with Twilio or bandwidth"
+          },
+          "API": {
+            "TITLE": "API",
+            "DESCRIPTION": "Make a custom channel using our API"
+          },
+          "TELEGRAM": {
+            "TITLE": "Telegram",
+            "DESCRIPTION": "Configure Telegram channel using Bot token"
+          },
+          "LINE": {
+            "TITLE": "Line",
+            "DESCRIPTION": "Integrate your Line channel"
+          },
+          "INSTAGRAM": {
+            "TITLE": "Instagram",
+            "DESCRIPTION": "Connect your instagram account"
+          },
+          "VOICE": {
+            "TITLE": "Voice",
+            "DESCRIPTION": "Integrate with Twilio Voice"
+          }
+        }
       },
       "AGENTS": {
         "TITLE": "Kullanıcılar",
@@ -434,11 +478,11 @@
       },
       "DETAILS": {
         "TITLE": "Gelen Kutusu Ayrıntıları",
-        "DESC": "EazyGuest'a bağlanmak istediğiniz Facebook Sayfasını seçmek için aşağıdaki açılır menüden seçim yapın. Daha iyi tanımlama için gelen kutunuza özel bir ad da verebilirsiniz."
+        "DESC": "Chatwoot'a bağlanmak istediğiniz Facebook Sayfasını seçmek için aşağıdaki açılır menüden seçim yapın. Daha iyi tanımlama için gelen kutunuza özel bir ad da verebilirsiniz."
       },
       "FINISH": {
         "TITLE": "Başardın!",
-        "DESC": "Facebook Sayfanızı EazyGuest ile entegre etmeyi başarıyla tamamladınız. Bir müşteri Sayfanıza bir dahaki sefere mesaj gönderdiğinde, konuşma otomatik olarak gelen kutunuzda görünecektir. <br> Ayrıca, web sitenize kolayca ekleyebileceğiniz bir pencere öğesi komut dosyası da sağlıyoruz. Bu web sitenizde yayınlandıktan sonra, müşteriler herhangi bir harici aracın yardımı olmadan doğrudan web sitenizden size mesaj gönderebilir ve sohbet burada, EazyGuest'ta görünecektir. <br> Harika, ha? Peki, emin olmaya çalışıyoruz :)"
+        "DESC": "Facebook Sayfanızı Chatwoot ile entegre etmeyi başarıyla tamamladınız. Bir müşteri Sayfanıza bir dahaki sefere mesaj gönderdiğinde, konuşma otomatik olarak gelen kutunuzda görünecektir. <br> Ayrıca, web sitenize kolayca ekleyebileceğiniz bir pencere öğesi komut dosyası da sağlıyoruz. Bu web sitenizde yayınlandıktan sonra, müşteriler herhangi bir harici aracın yardımı olmadan doğrudan web sitenizden size mesaj gönderebilir ve sohbet burada, Chatwoot'ta görünecektir. <br> Harika, ha? Peki, emin olmaya çalışıyoruz :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "E-posta Sağlayıcınızı Seçin",
@@ -478,7 +522,10 @@
       "MESSAGE": "Artık yeni kanalınız aracılığıyla müşterilerinizle iletişim kurabilirsiniz. Mutlu destekleme!",
       "BUTTON_TEXT": "Beni oraya götür",
       "MORE_SETTINGS": "Daha fazla ayar",
-      "WEBSITE_SUCCESS": "Bir web sitesi kanalı oluşturmayı başarıyla tamamladınız. Aşağıda gösterilen kodu kopyalayın ve web sitenize yapıştırın. Bir müşteri canlı sohbeti bir dahaki sefere kullandığında, konuşma otomatik olarak gelen kutunuzda görünecektir."
+      "WEBSITE_SUCCESS": "Bir web sitesi kanalı oluşturmayı başarıyla tamamladınız. Aşağıda gösterilen kodu kopyalayın ve web sitenize yapıştırın. Bir müşteri canlı sohbeti bir dahaki sefere kullandığında, konuşma otomatik olarak gelen kutunuzda görünecektir.",
+      "WHATSAPP_QR_INSTRUCTION": "Scan the QR code above to quickly test your WhatsApp inbox",
+      "MESSENGER_QR_INSTRUCTION": "Scan the QR code above to quickly test your Facebook Messenger inbox",
+      "TELEGRAM_QR_INSTRUCTION": "Scan the QR code above to quickly test your Telegram inbox"
     },
     "REAUTH": "Yeniden yetkilendir",
     "VIEW": "Görünüm",
@@ -864,13 +911,22 @@
         "USER_MESSAGE": "Merhaba",
         "AGENT_MESSAGE": "Merhaba"
       },
-      "BRANDING_TEXT": "EazyGuest tarafından desteklenmektedir",
+      "BRANDING_TEXT": "Chatwoot tarafından desteklenmektedir",
       "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
-      "MICROSOFT": "Microsoft",
-      "GOOGLE": "Google",
-      "OTHER_PROVIDERS": "Diğer Sağlayıcılar"
+      "MICROSOFT": {
+        "TITLE": "Microsoft",
+        "DESCRIPTION": "Connect with Microsoft"
+      },
+      "GOOGLE": {
+        "TITLE": "Google",
+        "DESCRIPTION": "Connect with Google"
+      },
+      "OTHER_PROVIDERS": {
+        "TITLE": "Diğer Sağlayıcılar",
+        "DESCRIPTION": "Connect with Other Providers"
+      }
     },
     "CHANNELS": {
       "MESSENGER": "Messenger",

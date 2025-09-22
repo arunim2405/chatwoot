@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Оберіть канал",
-        "BODY": "Виберіть постачальника, якого ви хочете інтегрувати з EazyGuest."
+        "BODY": "Виберіть постачальника, якого ви хочете інтегрувати з Chatwoot."
       },
       "INBOX": {
         "TITLE": "Створити вхідну скриньку",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Введіть назву свого сайту (наприклад: Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Після авторизації ми отримаємо доступ лише до ваших повідомлень на сторінці. Особисті повідомлення недоступні EazyGuest.",
+        "HELP": "PS: Після авторизації ми отримаємо доступ лише до ваших повідомлень на сторінці. Особисті повідомлення недоступні Chatwoot.",
         "CHOOSE_PAGE": "Вибрати сторінку",
         "CHOOSE_PLACEHOLDER": "Виберіть сторінку зі списку",
         "INBOX_NAME": "Назва Джерела",
@@ -424,7 +424,51 @@
       },
       "AUTH": {
         "TITLE": "Оберіть канал",
-        "DESC": "EazyGuest підтримує live-chat віджети, Facebook Messenger, профілі Twitter, WhatsApp, електронну пошту і т.д. Якщо ви хочете створити користувальницький канал, ви можете створити його за допомогою каналу API. Щоб почати, виберіть один з каналів нижче."
+        "DESC": "Chatwoot підтримує live-chat віджети, Facebook Messenger, профілі Twitter, WhatsApp, електронну пошту і т.д. Якщо ви хочете створити користувальницький канал, ви можете створити його за допомогою каналу API. Щоб почати, виберіть один з каналів нижче.",
+        "TITLE_NEXT": "Complete the setup",
+        "TITLE_FINISH": "Voilà!",
+        "CHANNEL": {
+          "WEBSITE": {
+            "TITLE": "Вебсайт",
+            "DESCRIPTION": "Create a live-chat widget"
+          },
+          "FACEBOOK": {
+            "TITLE": "Facebook",
+            "DESCRIPTION": "Connect your Facebook page"
+          },
+          "WHATSAPP": {
+            "TITLE": "WhatsApp",
+            "DESCRIPTION": "Support your customers on WhatsApp"
+          },
+          "EMAIL": {
+            "TITLE": "Email",
+            "DESCRIPTION": "Connect with Gmail, Outlook, or other providers"
+          },
+          "SMS": {
+            "TITLE": "SMS",
+            "DESCRIPTION": "Integrate SMS channel with Twilio or bandwidth"
+          },
+          "API": {
+            "TITLE": "API",
+            "DESCRIPTION": "Make a custom channel using our API"
+          },
+          "TELEGRAM": {
+            "TITLE": "Telegram",
+            "DESCRIPTION": "Configure Telegram channel using Bot token"
+          },
+          "LINE": {
+            "TITLE": "Line",
+            "DESCRIPTION": "Integrate your Line channel"
+          },
+          "INSTAGRAM": {
+            "TITLE": "Instagram",
+            "DESCRIPTION": "Connect your instagram account"
+          },
+          "VOICE": {
+            "TITLE": "Voice",
+            "DESCRIPTION": "Integrate with Twilio Voice"
+          }
+        }
       },
       "AGENTS": {
         "TITLE": "Агенти",
@@ -434,11 +478,11 @@
       },
       "DETAILS": {
         "TITLE": "Деталі скриньки Вхідні",
-        "DESC": "З випадаючого списку виберіть сторінку Facebook, яку ви хочете підключитися до EazyGuest. Ви також можете надати довільне ім'я для вашого джерела для кращої ідентифікації."
+        "DESC": "З випадаючого списку виберіть сторінку Facebook, яку ви хочете підключитися до Chatwoot. Ви також можете надати довільне ім'я для вашого джерела для кращої ідентифікації."
       },
       "FINISH": {
         "TITLE": "Успіх!",
-        "DESC": "Ви успішно закінчили інтеграцію вашої сторінки у Facebook з EazyGuest. Наступного разу, коли з’явиться клієнтська сторінка, розмова автоматично з'явиться у вашій поштовій скриньці.<br>Ми також надаємо вам сценарій роботи віджетів, який можна легко додати на ваш сайт. Як тільки це буде опубліковане на вашому сайті, клієнти можуть надсилати вам повідомлення прямо з вашого сайту без допомоги будь-якого зовнішнього інструменту, і розмова з'явиться тут, на EazyGuest.<br>Круто, так? Ну, ми дійсно намагаємося бути :)"
+        "DESC": "Ви успішно закінчили інтеграцію вашої сторінки у Facebook з Chatwoot. Наступного разу, коли з’явиться клієнтська сторінка, розмова автоматично з'явиться у вашій поштовій скриньці.<br>Ми також надаємо вам сценарій роботи віджетів, який можна легко додати на ваш сайт. Як тільки це буде опубліковане на вашому сайті, клієнти можуть надсилати вам повідомлення прямо з вашого сайту без допомоги будь-якого зовнішнього інструменту, і розмова з'явиться тут, на Chatwoot.<br>Круто, так? Ну, ми дійсно намагаємося бути :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Виберіть email провайдера",
@@ -478,7 +522,10 @@
       "MESSAGE": "Ви тепер можете взаємодіяти з вашими клієнтами через ваш новий канал. Щасливої підтримки",
       "BUTTON_TEXT": "Давай туди",
       "MORE_SETTINGS": "Додаткові налаштування",
-      "WEBSITE_SUCCESS": "Ви успішно завершили створення каналу Веб-сайт. Скопіюйте наведений нижче код і вставте його на ваш сайт. Наступного разу коли клієнт скористається онлайн чатом, розмова автоматично з'явиться в вашій скриньці Вхідні."
+      "WEBSITE_SUCCESS": "Ви успішно завершили створення каналу Веб-сайт. Скопіюйте наведений нижче код і вставте його на ваш сайт. Наступного разу коли клієнт скористається онлайн чатом, розмова автоматично з'явиться в вашій скриньці Вхідні.",
+      "WHATSAPP_QR_INSTRUCTION": "Scan the QR code above to quickly test your WhatsApp inbox",
+      "MESSENGER_QR_INSTRUCTION": "Scan the QR code above to quickly test your Facebook Messenger inbox",
+      "TELEGRAM_QR_INSTRUCTION": "Scan the QR code above to quickly test your Telegram inbox"
     },
     "REAUTH": "Повторна авторизація",
     "VIEW": "Вигляд",
@@ -864,13 +911,22 @@
         "USER_MESSAGE": "Привіт",
         "AGENT_MESSAGE": "Доброго дня"
       },
-      "BRANDING_TEXT": "Працює на EazyGuest",
+      "BRANDING_TEXT": "Працює на Chatwoot",
       "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
-      "MICROSOFT": "Microsoft",
-      "GOOGLE": "Google",
-      "OTHER_PROVIDERS": "Інші постачальники"
+      "MICROSOFT": {
+        "TITLE": "Microsoft",
+        "DESCRIPTION": "Connect with Microsoft"
+      },
+      "GOOGLE": {
+        "TITLE": "Google",
+        "DESCRIPTION": "Connect with Google"
+      },
+      "OTHER_PROVIDERS": {
+        "TITLE": "Інші постачальники",
+        "DESCRIPTION": "Connect with Other Providers"
+      }
     },
     "CHANNELS": {
       "MESSENGER": "Messenger",

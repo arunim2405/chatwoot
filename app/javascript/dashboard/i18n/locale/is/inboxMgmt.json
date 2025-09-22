@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Veldu rás",
-        "BODY": "Veldu þjónustuveituna sem þú vilt samþætta við EazyGuest."
+        "BODY": "Veldu þjónustuveituna sem þú vilt samþætta við Chatwoot."
       },
       "INBOX": {
         "TITLE": "Nýtt innhólf",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Sláðu inn nafn vefsíðu (Dæmi: Acme ehf)"
       },
       "FB": {
-        "HELP": "PS: Með því að skrá þig inn fáum við aðeins aðgang að skilaboðum síðunnar þinnar. EazyGuest getur aldrei nálgast einkaskilaboðin þín.",
+        "HELP": "PS: Með því að skrá þig inn fáum við aðeins aðgang að skilaboðum síðunnar þinnar. Chatwoot getur aldrei nálgast einkaskilaboðin þín.",
         "CHOOSE_PAGE": "Veldu Síðu",
         "CHOOSE_PLACEHOLDER": "Veldu síðu úr listanum",
         "INBOX_NAME": "Nafn Innhólfs",
@@ -424,7 +424,51 @@
       },
       "AUTH": {
         "TITLE": "Veldu rás",
-        "DESC": "EazyGuest styður vefspjall, Facebook Messenger, Twitter prófíla, WhatsApp, tölvupóst osfrv., Sem rásir. Ef þú vilt búa til sérsniðna rás geturðu búið hana til með því að nota API rásina. Til að byrja skaltu velja eina af rásunum hér að neðan."
+        "DESC": "Chatwoot styður vefspjall, Facebook Messenger, Twitter prófíla, WhatsApp, tölvupóst osfrv., Sem rásir. Ef þú vilt búa til sérsniðna rás geturðu búið hana til með því að nota API rásina. Til að byrja skaltu velja eina af rásunum hér að neðan.",
+        "TITLE_NEXT": "Complete the setup",
+        "TITLE_FINISH": "Voilà!",
+        "CHANNEL": {
+          "WEBSITE": {
+            "TITLE": "Website",
+            "DESCRIPTION": "Create a live-chat widget"
+          },
+          "FACEBOOK": {
+            "TITLE": "Facebook",
+            "DESCRIPTION": "Connect your Facebook page"
+          },
+          "WHATSAPP": {
+            "TITLE": "WhatsApp",
+            "DESCRIPTION": "Support your customers on WhatsApp"
+          },
+          "EMAIL": {
+            "TITLE": "Tölvupóstfang",
+            "DESCRIPTION": "Connect with Gmail, Outlook, or other providers"
+          },
+          "SMS": {
+            "TITLE": "SMS",
+            "DESCRIPTION": "Integrate SMS channel with Twilio or bandwidth"
+          },
+          "API": {
+            "TITLE": "API",
+            "DESCRIPTION": "Make a custom channel using our API"
+          },
+          "TELEGRAM": {
+            "TITLE": "Telegram",
+            "DESCRIPTION": "Configure Telegram channel using Bot token"
+          },
+          "LINE": {
+            "TITLE": "Line",
+            "DESCRIPTION": "Integrate your Line channel"
+          },
+          "INSTAGRAM": {
+            "TITLE": "Instagram",
+            "DESCRIPTION": "Connect your instagram account"
+          },
+          "VOICE": {
+            "TITLE": "Voice",
+            "DESCRIPTION": "Integrate with Twilio Voice"
+          }
+        }
       },
       "AGENTS": {
         "TITLE": "Þjónustufulltrúar",
@@ -434,11 +478,11 @@
       },
       "DETAILS": {
         "TITLE": "Innhólfs Upplýsingar",
-        "DESC": "Í fellilistanum hér að neðan, veldu Facebook síðuna sem þú vilt tengja við EazyGuest. Þú getur líka gefið innhólfinu sérsniðið nafn til að þekkja það betur."
+        "DESC": "Í fellilistanum hér að neðan, veldu Facebook síðuna sem þú vilt tengja við Chatwoot. Þú getur líka gefið innhólfinu sérsniðið nafn til að þekkja það betur."
       },
       "FINISH": {
         "TITLE": "Nailed It!",
-        "DESC": "Þú hefur lokið við að innleiða Facebook síðuna þína í EazyGuest. Næst þegar viðskiptavinur sendir skilaboð á síðunni þinni birtist samtalið sjálfkrafa í innhólfinu þínu.<br>Við erum líka að útvega þér netspjalls skriftu sem þú getur auðveldlega bætt við vefsíðuna þína. Þegar þetta er komið á vefsvæðið þitt geta viðskiptavinir sent þér skilaboð beint frá vefsíðunni þinni án hjálpar utanaðkomandi tóla og samtalið mun birtast hér, í EazyGuest.<br>Svalt, ha? Jæja, við reynum að vera það :)"
+        "DESC": "Þú hefur lokið við að innleiða Facebook síðuna þína í Chatwoot. Næst þegar viðskiptavinur sendir skilaboð á síðunni þinni birtist samtalið sjálfkrafa í innhólfinu þínu.<br>Við erum líka að útvega þér netspjalls skriftu sem þú getur auðveldlega bætt við vefsíðuna þína. Þegar þetta er komið á vefsvæðið þitt geta viðskiptavinir sent þér skilaboð beint frá vefsíðunni þinni án hjálpar utanaðkomandi tóla og samtalið mun birtast hér, í Chatwoot.<br>Svalt, ha? Jæja, við reynum að vera það :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -478,7 +522,10 @@
       "MESSAGE": "Þú getur nú átt samskipti við viðskiptavini þína í gegnum nýju rásina þína. Gangi þér vel við þjónustuna",
       "BUTTON_TEXT": "Taktu mig þangað",
       "MORE_SETTINGS": "Fleiri stillingar",
-      "WEBSITE_SUCCESS": "Þú hefur lokið við að búa til vefsíðurás. Afritaðu kóðann sem sýndur er hér að neðan og límdu hann á vefsíðuna þína. Næst þegar viðskiptavinur notar spjallið birtist samtalið sjálfkrafa í innhólfinu þínu."
+      "WEBSITE_SUCCESS": "Þú hefur lokið við að búa til vefsíðurás. Afritaðu kóðann sem sýndur er hér að neðan og límdu hann á vefsíðuna þína. Næst þegar viðskiptavinur notar spjallið birtist samtalið sjálfkrafa í innhólfinu þínu.",
+      "WHATSAPP_QR_INSTRUCTION": "Scan the QR code above to quickly test your WhatsApp inbox",
+      "MESSENGER_QR_INSTRUCTION": "Scan the QR code above to quickly test your Facebook Messenger inbox",
+      "TELEGRAM_QR_INSTRUCTION": "Scan the QR code above to quickly test your Telegram inbox"
     },
     "REAUTH": "Endurauðkenna",
     "VIEW": "Skoða",
@@ -864,13 +911,22 @@
         "USER_MESSAGE": "Hi",
         "AGENT_MESSAGE": "Hello"
       },
-      "BRANDING_TEXT": "Keyrt af EazyGuest",
+      "BRANDING_TEXT": "Keyrt af Chatwoot",
       "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
-      "MICROSOFT": "Microsoft",
-      "GOOGLE": "Google",
-      "OTHER_PROVIDERS": "Other Providers"
+      "MICROSOFT": {
+        "TITLE": "Microsoft",
+        "DESCRIPTION": "Connect with Microsoft"
+      },
+      "GOOGLE": {
+        "TITLE": "Google",
+        "DESCRIPTION": "Connect with Google"
+      },
+      "OTHER_PROVIDERS": {
+        "TITLE": "Other Providers",
+        "DESCRIPTION": "Connect with Other Providers"
+      }
     },
     "CHANNELS": {
       "MESSENGER": "Messenger",

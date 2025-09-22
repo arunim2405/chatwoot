@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Alege canalul",
-        "BODY": "Alegeți serviciul pe care doriți să-l integrați cu EazyGuest."
+        "BODY": "Alegeți serviciul pe care doriți să-l integrați cu Chatwoot."
       },
       "INBOX": {
         "TITLE": "Crează căsuța",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Introduceți numele website-ului dvs. (de exemplu: Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Prin conectare, vom avea acces doar la mesajele paginii tale. Mesajele tale private nu pot fi accesate niciodată de EazyGuest.",
+        "HELP": "PS: Prin conectare, vom avea acces doar la mesajele paginii tale. Mesajele tale private nu pot fi accesate niciodată de Chatwoot.",
         "CHOOSE_PAGE": "Alege pagina",
         "CHOOSE_PLACEHOLDER": "Selectaţi o pagină din listă",
         "INBOX_NAME": "Nume Inbox",
@@ -424,7 +424,51 @@
       },
       "AUTH": {
         "TITLE": "Alege un canal",
-        "DESC": "EazyGuest acceptă widget-uri live-chat, Facebook Messenger, profiluri Twitter, WhatsApp, e-mailuri etc., ca canale. Dacă doriți să construiți un canal personalizat, îl puteți crea folosind canalul API. Pentru a începe, alegeți unul dintre canalele de mai jos."
+        "DESC": "Chatwoot acceptă widget-uri live-chat, Facebook Messenger, profiluri Twitter, WhatsApp, e-mailuri etc., ca canale. Dacă doriți să construiți un canal personalizat, îl puteți crea folosind canalul API. Pentru a începe, alegeți unul dintre canalele de mai jos.",
+        "TITLE_NEXT": "Complete the setup",
+        "TITLE_FINISH": "Voilà!",
+        "CHANNEL": {
+          "WEBSITE": {
+            "TITLE": "Website",
+            "DESCRIPTION": "Create a live-chat widget"
+          },
+          "FACEBOOK": {
+            "TITLE": "Facebook",
+            "DESCRIPTION": "Connect your Facebook page"
+          },
+          "WHATSAPP": {
+            "TITLE": "WhatsApp",
+            "DESCRIPTION": "Support your customers on WhatsApp"
+          },
+          "EMAIL": {
+            "TITLE": "E-mail",
+            "DESCRIPTION": "Connect with Gmail, Outlook, or other providers"
+          },
+          "SMS": {
+            "TITLE": "SMS",
+            "DESCRIPTION": "Integrate SMS channel with Twilio or bandwidth"
+          },
+          "API": {
+            "TITLE": "API",
+            "DESCRIPTION": "Make a custom channel using our API"
+          },
+          "TELEGRAM": {
+            "TITLE": "Telegram",
+            "DESCRIPTION": "Configure Telegram channel using Bot token"
+          },
+          "LINE": {
+            "TITLE": "Line",
+            "DESCRIPTION": "Integrate your Line channel"
+          },
+          "INSTAGRAM": {
+            "TITLE": "Instagram",
+            "DESCRIPTION": "Connect your instagram account"
+          },
+          "VOICE": {
+            "TITLE": "Voice",
+            "DESCRIPTION": "Integrate with Twilio Voice"
+          }
+        }
       },
       "AGENTS": {
         "TITLE": "Agenți",
@@ -434,11 +478,11 @@
       },
       "DETAILS": {
         "TITLE": "Detalii inbox",
-        "DESC": "Din meniul derulant de mai jos, selectați pagina Facebook pe care doriți să vă conectați la EazyGuest. Poți de asemenea să dai un nume personalizat inbox-ului pentru o mai bună identificare."
+        "DESC": "Din meniul derulant de mai jos, selectați pagina Facebook pe care doriți să vă conectați la Chatwoot. Poți de asemenea să dai un nume personalizat inbox-ului pentru o mai bună identificare."
       },
       "FINISH": {
         "TITLE": "Corect!",
-        "DESC": "Ai reușit să integrezi pagina ta de Facebook cu EazyGuest. Data viitoare când un client trimite un mesaj paginii tale, conversația va apărea automat pe căsuța ta poștală.<br>Vă oferim și un script de widget pe care îl puteți adăuga cu ușurință la site-ul dvs. Odată ce aceasta este în direct pe site-ul tău, clienții vă pot trimite mesaje direct de pe site-ul dvs fără ajutorul niciunui instrument extern și conversația va apărea aici, pe EazyGuest.<br>Cool, nu? Păi, sigur că încercăm să fim :)"
+        "DESC": "Ai reușit să integrezi pagina ta de Facebook cu Chatwoot. Data viitoare când un client trimite un mesaj paginii tale, conversația va apărea automat pe căsuța ta poștală.<br>Vă oferim și un script de widget pe care îl puteți adăuga cu ușurință la site-ul dvs. Odată ce aceasta este în direct pe site-ul tău, clienții vă pot trimite mesaje direct de pe site-ul dvs fără ajutorul niciunui instrument extern și conversația va apărea aici, pe Chatwoot.<br>Cool, nu? Păi, sigur că încercăm să fim :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Selectați furnizorul de e-mail",
@@ -478,7 +522,10 @@
       "MESSAGE": "Acum poți intra în contact cu clienții tăi prin noul tău Canal. Suport fericit",
       "BUTTON_TEXT": "Du-mă acolo",
       "MORE_SETTINGS": "Mai multe setări",
-      "WEBSITE_SUCCESS": "Ați finalizat cu succes crearea unui canal web. Copiați codul de mai jos și inserati-l pe site-ul dvs. Data viitoare când un client folosește conversația live, conversația va apărea automat pe căsuța poștală."
+      "WEBSITE_SUCCESS": "Ați finalizat cu succes crearea unui canal web. Copiați codul de mai jos și inserati-l pe site-ul dvs. Data viitoare când un client folosește conversația live, conversația va apărea automat pe căsuța poștală.",
+      "WHATSAPP_QR_INSTRUCTION": "Scan the QR code above to quickly test your WhatsApp inbox",
+      "MESSENGER_QR_INSTRUCTION": "Scan the QR code above to quickly test your Facebook Messenger inbox",
+      "TELEGRAM_QR_INSTRUCTION": "Scan the QR code above to quickly test your Telegram inbox"
     },
     "REAUTH": "Reautorizează",
     "VIEW": "Vizualizare",
@@ -864,13 +911,22 @@
         "USER_MESSAGE": "Salut",
         "AGENT_MESSAGE": "Bună"
       },
-      "BRANDING_TEXT": "Oferit de EazyGuest",
+      "BRANDING_TEXT": "Oferit de Chatwoot",
       "SCRIPT_SETTINGS": "\nwindow.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
-      "MICROSOFT": "Microsoft",
-      "GOOGLE": "Google",
-      "OTHER_PROVIDERS": "Alți furnizori"
+      "MICROSOFT": {
+        "TITLE": "Microsoft",
+        "DESCRIPTION": "Connect with Microsoft"
+      },
+      "GOOGLE": {
+        "TITLE": "Google",
+        "DESCRIPTION": "Connect with Google"
+      },
+      "OTHER_PROVIDERS": {
+        "TITLE": "Alți furnizori",
+        "DESCRIPTION": "Connect with Other Providers"
+      }
     },
     "CHANNELS": {
       "MESSENGER": "Messenger",

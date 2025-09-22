@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Pasirinkti Kanalą",
-        "BODY": "Pasirinkite paslaugų teikėją, kurį norite integruoti su EazyGuest."
+        "BODY": "Pasirinkite paslaugų teikėją, kurį norite integruoti su Chatwoot."
       },
       "INBOX": {
         "TITLE": "Sukurti Gautų Laiškų Aplanką",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Įveskite savo internetinio puslapio pavadinimą (pvz.: Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Po autorizacijos turėsime prieigą tik prie jūsų pranešimų puslapyje. EazyGuest asmeniniai pranešimai nebus pasiekiami.",
+        "HELP": "PS: Po autorizacijos turėsime prieigą tik prie jūsų pranešimų puslapyje. Chatwoot asmeniniai pranešimai nebus pasiekiami.",
         "CHOOSE_PAGE": "Pasirinkti Puslapį",
         "CHOOSE_PLACEHOLDER": "Psirinkti puslapį iš sąrašo",
         "INBOX_NAME": "Gautų Laiškų Aplanko Pavadinimas",
@@ -424,7 +424,51 @@
       },
       "AUTH": {
         "TITLE": "Pasirinkti Kanalą",
-        "DESC": "EazyGuest palaiko tiesioginio pokalbio valdiklius, Facebook Messenger, Twitter profilius, WhatsApp, el. laiškus ir kt. kaip kanalus. Jei norite sukurti personalizuotą kanalą, galite jį sukurti naudodami API kanalą. Norėdami pradėti, pasirinkite vieną iš toliau pateiktų kanalų."
+        "DESC": "Chatwoot palaiko tiesioginio pokalbio valdiklius, Facebook Messenger, Twitter profilius, WhatsApp, el. laiškus ir kt. kaip kanalus. Jei norite sukurti personalizuotą kanalą, galite jį sukurti naudodami API kanalą. Norėdami pradėti, pasirinkite vieną iš toliau pateiktų kanalų.",
+        "TITLE_NEXT": "Complete the setup",
+        "TITLE_FINISH": "Voilà!",
+        "CHANNEL": {
+          "WEBSITE": {
+            "TITLE": "Internetinis puslapis",
+            "DESCRIPTION": "Create a live-chat widget"
+          },
+          "FACEBOOK": {
+            "TITLE": "Facebook",
+            "DESCRIPTION": "Connect your Facebook page"
+          },
+          "WHATSAPP": {
+            "TITLE": "WhatsApp",
+            "DESCRIPTION": "Support your customers on WhatsApp"
+          },
+          "EMAIL": {
+            "TITLE": "El. paštas",
+            "DESCRIPTION": "Connect with Gmail, Outlook, or other providers"
+          },
+          "SMS": {
+            "TITLE": "SMS",
+            "DESCRIPTION": "Integrate SMS channel with Twilio or bandwidth"
+          },
+          "API": {
+            "TITLE": "API",
+            "DESCRIPTION": "Make a custom channel using our API"
+          },
+          "TELEGRAM": {
+            "TITLE": "Telegram",
+            "DESCRIPTION": "Configure Telegram channel using Bot token"
+          },
+          "LINE": {
+            "TITLE": "Line",
+            "DESCRIPTION": "Integrate your Line channel"
+          },
+          "INSTAGRAM": {
+            "TITLE": "Instagram",
+            "DESCRIPTION": "Connect your instagram account"
+          },
+          "VOICE": {
+            "TITLE": "Voice",
+            "DESCRIPTION": "Integrate with Twilio Voice"
+          }
+        }
       },
       "AGENTS": {
         "TITLE": "Agentai",
@@ -434,11 +478,11 @@
       },
       "DETAILS": {
         "TITLE": "Gautų Laiškų Aplanko Detali Informacija",
-        "DESC": "Žemiau esančiame meniu pasirinkite Facebook puslapį, kurį norite prisijungti prie „EazyGuest“. Taip pat galite priskirti norimą pavadinimą savo gautų laiškų aplankui, kad būtų lengviau atpažinti."
+        "DESC": "Žemiau esančiame meniu pasirinkite Facebook puslapį, kurį norite prisijungti prie „Chatwoot“. Taip pat galite priskirti norimą pavadinimą savo gautų laiškų aplankui, kad būtų lengviau atpažinti."
       },
       "FINISH": {
         "TITLE": "Atlikta!",
-        "DESC": "Sėkmingai užbaigėte savo Facebook puslapio integravimą su EazyGuest. Kai kitą kartą klientas parašys pranešimą jūsų puslapyje, pokalbis automatiškai pasirodys jūsų gautų laiškų aplanke.<br>Taip pat pateikiame valdiklio scenarijų, kurį galite lengvai pridėti prie savo svetainės. Kai tai bus įdiegta jūsų svetainėje, klientai gali jums siųsti pranešimus tiesiai iš jūsų svetainės, nenaudodami jokio išorinio įrankio, o pokalbis bus rodomas EazyGuest.<br>Puiku, ar ne? Na, mes tikrai stengiamės tokiais būti :)"
+        "DESC": "Sėkmingai užbaigėte savo Facebook puslapio integravimą su Chatwoot. Kai kitą kartą klientas parašys pranešimą jūsų puslapyje, pokalbis automatiškai pasirodys jūsų gautų laiškų aplanke.<br>Taip pat pateikiame valdiklio scenarijų, kurį galite lengvai pridėti prie savo svetainės. Kai tai bus įdiegta jūsų svetainėje, klientai gali jums siųsti pranešimus tiesiai iš jūsų svetainės, nenaudodami jokio išorinio įrankio, o pokalbis bus rodomas Chatwoot.<br>Puiku, ar ne? Na, mes tikrai stengiamės tokiais būti :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Pasirinkite el. pašto paslaugų teikėją",
@@ -478,7 +522,10 @@
       "MESSAGE": "Dabar galite bendrauti su klientais naudodami naująjį kanalą. Gero naudojimo",
       "BUTTON_TEXT": "Nuvesk mane ten",
       "MORE_SETTINGS": "Daugiau nustatymų",
-      "WEBSITE_SUCCESS": "Sėkmingai baigėte kurti svetainės kanalą. Nukopijuokite toliau pateiktą kodą ir įdėkite jį į savo svetainę. Kai kitą kartą klientas naudosis tiesioginiu pokalbiu, pokalbis bus automatiškai rodomas jūsų gautų pranešimų aplanke."
+      "WEBSITE_SUCCESS": "Sėkmingai baigėte kurti svetainės kanalą. Nukopijuokite toliau pateiktą kodą ir įdėkite jį į savo svetainę. Kai kitą kartą klientas naudosis tiesioginiu pokalbiu, pokalbis bus automatiškai rodomas jūsų gautų pranešimų aplanke.",
+      "WHATSAPP_QR_INSTRUCTION": "Scan the QR code above to quickly test your WhatsApp inbox",
+      "MESSENGER_QR_INSTRUCTION": "Scan the QR code above to quickly test your Facebook Messenger inbox",
+      "TELEGRAM_QR_INSTRUCTION": "Scan the QR code above to quickly test your Telegram inbox"
     },
     "REAUTH": "Pakartotinai autorizuoti",
     "VIEW": "Paržiūra",
@@ -864,13 +911,22 @@
         "USER_MESSAGE": "Hi",
         "AGENT_MESSAGE": "Sveiki"
       },
-      "BRANDING_TEXT": "Parengta pagal EazyGuest",
+      "BRANDING_TEXT": "Parengta pagal Chatwoot",
       "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
-      "MICROSOFT": "Microsoft",
-      "GOOGLE": "Google",
-      "OTHER_PROVIDERS": "Kiti Tiekėjai"
+      "MICROSOFT": {
+        "TITLE": "Microsoft",
+        "DESCRIPTION": "Connect with Microsoft"
+      },
+      "GOOGLE": {
+        "TITLE": "Google",
+        "DESCRIPTION": "Connect with Google"
+      },
+      "OTHER_PROVIDERS": {
+        "TITLE": "Kiti Tiekėjai",
+        "DESCRIPTION": "Connect with Other Providers"
+      }
     },
     "CHANNELS": {
       "MESSENGER": "Messenger",

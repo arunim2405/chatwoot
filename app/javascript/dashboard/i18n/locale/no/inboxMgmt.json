@@ -11,7 +11,7 @@
     "CREATE_FLOW": {
       "CHANNEL": {
         "TITLE": "Velg kanal",
-        "BODY": "Velg tilbyderen du vil integrere med EazyGuest."
+        "BODY": "Velg tilbyderen du vil integrere med Chatwoot."
       },
       "INBOX": {
         "TITLE": "Opprett innboks",
@@ -37,7 +37,7 @@
         "PLACEHOLDER": "Angi navnet på nettsiden (f. eks.: Acme Inc)"
       },
       "FB": {
-        "HELP": "PS: Ved å logge inn får vi bare tilgang til meldingene til siden. Dine private meldinger vil aldri bli lest av EazyGuest.",
+        "HELP": "PS: Ved å logge inn får vi bare tilgang til meldingene til siden. Dine private meldinger vil aldri bli lest av Chatwoot.",
         "CHOOSE_PAGE": "Velg side",
         "CHOOSE_PLACEHOLDER": "Velg en side fra listen",
         "INBOX_NAME": "Navn på innboks",
@@ -424,7 +424,51 @@
       },
       "AUTH": {
         "TITLE": "Choose a channel",
-        "DESC": "EazyGuest supports live-chat widgets, Facebook Messenger, Twitter profiles, WhatsApp, Emails, etc., as channels. If you want to build a custom channel, you can create it using the API channel. To get started, choose one of the channels below."
+        "DESC": "Chatwoot supports live-chat widgets, Facebook Messenger, Twitter profiles, WhatsApp, Emails, etc., as channels. If you want to build a custom channel, you can create it using the API channel. To get started, choose one of the channels below.",
+        "TITLE_NEXT": "Complete the setup",
+        "TITLE_FINISH": "Voilà!",
+        "CHANNEL": {
+          "WEBSITE": {
+            "TITLE": "Website",
+            "DESCRIPTION": "Create a live-chat widget"
+          },
+          "FACEBOOK": {
+            "TITLE": "Facebook",
+            "DESCRIPTION": "Connect your Facebook page"
+          },
+          "WHATSAPP": {
+            "TITLE": "WhatsApp",
+            "DESCRIPTION": "Support your customers on WhatsApp"
+          },
+          "EMAIL": {
+            "TITLE": "E-post",
+            "DESCRIPTION": "Connect with Gmail, Outlook, or other providers"
+          },
+          "SMS": {
+            "TITLE": "SMS",
+            "DESCRIPTION": "Integrate SMS channel with Twilio or bandwidth"
+          },
+          "API": {
+            "TITLE": "API",
+            "DESCRIPTION": "Make a custom channel using our API"
+          },
+          "TELEGRAM": {
+            "TITLE": "Telegram",
+            "DESCRIPTION": "Configure Telegram channel using Bot token"
+          },
+          "LINE": {
+            "TITLE": "Line",
+            "DESCRIPTION": "Integrate your Line channel"
+          },
+          "INSTAGRAM": {
+            "TITLE": "Instagram",
+            "DESCRIPTION": "Connect your instagram account"
+          },
+          "VOICE": {
+            "TITLE": "Voice",
+            "DESCRIPTION": "Integrate with Twilio Voice"
+          }
+        }
       },
       "AGENTS": {
         "TITLE": "Agenter",
@@ -434,11 +478,11 @@
       },
       "DETAILS": {
         "TITLE": "Innboksdetaljer",
-        "DESC": "Fra listen under, velg facebook-siden du vil koble til EazyGuest. Du kan også gi innboksen et egendefinert navn for bedre identifisering."
+        "DESC": "Fra listen under, velg facebook-siden du vil koble til Chatwoot. Du kan også gi innboksen et egendefinert navn for bedre identifisering."
       },
       "FINISH": {
         "TITLE": "Den satt!",
-        "DESC": "Du er ferdig med å integrere din facebook-side med EazyGuest. Neste gang en kunde sender en melding fra siden din vil samtalen vises automatisk i innboksen din.<br>Vi gir deg også et widget skript som du enkelt kan legge til på nettstedet ditt. Når dette er direkte på din nettside kan kunder sende deg meldinger fra nettstedet ditt uten hjelp av eksterne verktøy og samtalen vil vises her, i EazyGuest.<br>Kult, eller hva? Vel, vi prøver :)"
+        "DESC": "Du er ferdig med å integrere din facebook-side med Chatwoot. Neste gang en kunde sender en melding fra siden din vil samtalen vises automatisk i innboksen din.<br>Vi gir deg også et widget skript som du enkelt kan legge til på nettstedet ditt. Når dette er direkte på din nettside kan kunder sende deg meldinger fra nettstedet ditt uten hjelp av eksterne verktøy og samtalen vil vises her, i Chatwoot.<br>Kult, eller hva? Vel, vi prøver :)"
       },
       "EMAIL_PROVIDER": {
         "TITLE": "Select your email provider",
@@ -478,7 +522,10 @@
       "MESSAGE": "You can now engage with your customers through your new Channel. Happy supporting",
       "BUTTON_TEXT": "Ta meg dit",
       "MORE_SETTINGS": "More settings",
-      "WEBSITE_SUCCESS": "Du har nå fullført opprettingen av nettstedskanalen. Kopier koden nedenfor og lim den inn på nettstedet. Neste gang en kunde bruker live-chatten vil samtalen vises automatisk i innboksen din."
+      "WEBSITE_SUCCESS": "Du har nå fullført opprettingen av nettstedskanalen. Kopier koden nedenfor og lim den inn på nettstedet. Neste gang en kunde bruker live-chatten vil samtalen vises automatisk i innboksen din.",
+      "WHATSAPP_QR_INSTRUCTION": "Scan the QR code above to quickly test your WhatsApp inbox",
+      "MESSENGER_QR_INSTRUCTION": "Scan the QR code above to quickly test your Facebook Messenger inbox",
+      "TELEGRAM_QR_INSTRUCTION": "Scan the QR code above to quickly test your Telegram inbox"
     },
     "REAUTH": "Reautoriser",
     "VIEW": "Vis",
@@ -864,13 +911,22 @@
         "USER_MESSAGE": "Hi",
         "AGENT_MESSAGE": "Hello"
       },
-      "BRANDING_TEXT": "Drevet av EazyGuest",
+      "BRANDING_TEXT": "Drevet av Chatwoot",
       "SCRIPT_SETTINGS": "\n      window.chatwootSettings = {options};"
     },
     "EMAIL_PROVIDERS": {
-      "MICROSOFT": "Microsoft",
-      "GOOGLE": "Google",
-      "OTHER_PROVIDERS": "Other Providers"
+      "MICROSOFT": {
+        "TITLE": "Microsoft",
+        "DESCRIPTION": "Connect with Microsoft"
+      },
+      "GOOGLE": {
+        "TITLE": "Google",
+        "DESCRIPTION": "Connect with Google"
+      },
+      "OTHER_PROVIDERS": {
+        "TITLE": "Other Providers",
+        "DESCRIPTION": "Connect with Other Providers"
+      }
     },
     "CHANNELS": {
       "MESSENGER": "Messenger",
