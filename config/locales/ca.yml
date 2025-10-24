@@ -23,6 +23,10 @@ ca:
       success: 'Channel reauthorized successfully'
       not_required: 'Reauthorization is not required for this inbox'
       invalid_channel: 'Invalid channel type for reauthorization'
+  auth:
+    saml:
+      invalid_email: 'Introduïu una adreça de correu electrònic vàlida'
+      authentication_failed: 'Authentication failed. Please check your credentials and try again.'
   messages:
     reset_password_success: Woot! S'ha restablert la contrasenya amb èxit. Revisa el correu per més instruccions.
     reset_password_failure: Uh ho! No s'ha trobat cap compte amb aquest correu electrònic.
@@ -58,6 +62,9 @@ ca:
         invalid: Correu electrònic invàlid
       phone_number:
         invalid: hauria d'estar en format e164
+    companies:
+      domain:
+        invalid: must be a valid domain name
     categories:
       locale:
         unique: hauria de ser únic a la categoria i al portal
@@ -82,13 +89,27 @@ ca:
       validations:
         name: no hauria de començar ni acabar amb símbols, i no hauria de tenir caràcters < > / \ @.
     custom_filters:
-      number_of_records: S'ha arribat al límit. El nombre màxim de filtres personalitzats permesos per a un usuari per compte és de 50.
-      invalid_attribute: "Clau d'atribut no vàlida: [%{key}]. La clau hauria de ser una de [%{allowed_keys}] o un atribut personalitzat definit al compte."
+      number_of_records: S'ha arribat al límit. El nombre màxim de filtres personalitzats permesos per a un usuari per compte és de 1000.
+      invalid_attribute: 'Clau d''atribut no vàlida: [%{key}]. La clau hauria de ser una de [%{allowed_keys}] o un atribut personalitzat definit al compte.'
       invalid_operator: Operador no vàlid. Els operadors permesos per a %{attribute_name} son [%{allowed_keys}].
       invalid_query_operator: Query operator must be either "AND" or "OR".
       invalid_value: Valor no vàlid. Els valors proporcionats per a %{attribute_name} no són vàlids
     custom_attribute_definition:
       key_conflict: The provided key is not allowed as it might conflict with default attributes.
+    mfa:
+      already_enabled: MFA is already enabled
+      not_enabled: MFA is not enabled
+      invalid_code: Invalid verification code
+      invalid_backup_code: Invalid backup code
+      invalid_token: Invalid or expired MFA token
+      invalid_credentials: Invalid credentials or verification code
+      feature_unavailable: MFA feature is not available. Please configure encryption keys.
+  profile:
+    mfa:
+      enabled: MFA enabled successfully
+      disabled: MFA disabled successfully
+    account_saml_settings:
+      invalid_certificate: must be a valid X.509 certificate in PEM format
   reports:
     period: Període d'informes %{since} a %{until}
     utc_warning: L'informe generat es troba a la zona horària UTC
@@ -146,34 +167,36 @@ ca:
       conversation_creation: 'Una conversa (#%{display_id}) ha estat creada a %{inbox_name}'
       conversation_assignment: 'Una conversa (#%{display_id}) ha estat assignada a tu'
       assigned_conversation_new_message: 'Es crea un missatge nou a la conversa (#%{display_id})'
-      conversation_mention: "T'han mencionat a la conversa (#%{display_id})"
-      sla_missed_first_response: "S'ha perdut la primera resposta de l'objectiu de SLA per a la conversa (#%{display_id})"
-      sla_missed_next_response: "S'ha perdut la següent resposta de l'objectiu de SLA per a la conversa (#%{display_id})"
-      sla_missed_resolution: "S'ha perdut la resolució de l'objectiu de SLA per a la conversa (#%{display_id})"
+      conversation_mention: 'T''han mencionat a la conversa (#%{display_id})'
+      sla_missed_first_response: 'S''ha perdut la primera resposta de l''objectiu de SLA per a la conversa (#%{display_id})'
+      sla_missed_next_response: 'S''ha perdut la següent resposta de l''objectiu de SLA per a la conversa (#%{display_id})'
+      sla_missed_resolution: 'S''ha perdut la resolució de l''objectiu de SLA per a la conversa (#%{display_id})'
     attachment: 'Adjunt'
     no_content: 'Sense contingut'
   conversations:
     captain:
       handoff: 'Transferring to another agent for further assistance.'
     messages:
-      instagram_story_content: "%{story_sender} t'ha mencionat a la història: "
+      instagram_story_content: '%{story_sender} t''ha mencionat a la història: '
       instagram_deleted_story_content: Aquesta història ja no està disponible.
       deleted: Aquest missatge a sigut eliminat
       whatsapp:
         list_button_label: 'Choose an item'
       delivery_status:
-        error_code: "Codi d'error: %{error_code}"
+        error_code: 'Codi d''error: %{error_code}'
     activity:
       captain:
         resolved: 'Conversation was marked resolved by %{user_name} due to inactivity'
         open: 'Conversation was marked open by %{user_name}'
+      agent_bot:
+        error_moved_to_open: 'Conversation was marked open by system due to an error with the agent bot.'
       status:
         resolved: 'La conversa va ser marcada com resolta per %{user_name}'
         contact_resolved: 'La conversa va ser resolta per %{contact_name}'
         open: 'La conversa es va reobrir per %{user_name}'
         pending: 'La conversa va ser marcada com pendent per %{user_name}'
         snoozed: '%{user_name} ha posposat la conversa'
-        auto_resolved_days: "El sistema ha marcat que la conversa s'ha resolt a causa de %{count} dies d'inactivitat"
+        auto_resolved_days: 'El sistema ha marcat que la conversa s''ha resolt a causa de %{count} dies d''inactivitat'
         auto_resolved_hours: 'Conversation was marked resolved by system due to %{count} hours of inactivity'
         auto_resolved_minutes: 'Conversation was marked resolved by system due to %{count} minutes of inactivity'
         system_auto_open: El sistema ha reobert la conversa a causa d'un nou missatge entrant.
@@ -182,9 +205,9 @@ ca:
         updated: '%{user_name} ha canviat la prioritat de %{old_priority} a %{new_priority}'
         removed: '%{user_name} ha eliminat la prioritat'
       assignee:
-        self_assigned: "%{user_name} s'ha auto assignat aquesta conversa"
+        self_assigned: '%{user_name} s''ha auto assignat aquesta conversa'
         assigned: 'Assignada a %{assignee_name} per %{user_name}'
-        removed: "%{user_name} ha tret l'assignació de la conversa"
+        removed: '%{user_name} ha tret l''assignació de la conversa'
       team:
         assigned: 'Assignada a %{team_name} per %{user_name}'
         assigned_with_assignee: 'Assignat a %{assignee_name} mitjançant %{team_name} per %{user_name}'
@@ -208,7 +231,7 @@ ca:
       auto_resolution_message: 'Resolving the conversation as it has been inactive for a while. Please start a new conversation if you need further assistance.'
     templates:
       greeting_message_body: '%{account_name} normalment respon a les poques hores.'
-      ways_to_reach_you_message_body: "Fes saber a l'equip la forma de posar-nos en contacte amb tu."
+      ways_to_reach_you_message_body: 'Fes saber a l''equip la forma de posar-nos en contacte amb tu.'
       email_input_box_message_body: 'Rep les notificacions per correu electrònic'
       csat_input_message_body: 'Si us plau, valoreu la conversa'
     reply:
@@ -237,16 +260,16 @@ ca:
       description: 'Dashboard Apps allow you to create and embed applications that display user information, orders, or payment history, providing more context to your customer support agents.'
     dyte:
       name: 'Dyte'
-      short_description: 'Start video/voice calls with customers directly from EazyGuest.'
-      description: 'Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from EazyGuest.'
+      short_description: 'Start video/voice calls with customers directly from Chatwoot.'
+      description: 'Dyte is a product that integrates audio and video functionalities into your application. With this integration, your agents can start video/voice calls with your customers directly from Chatwoot.'
       meeting_name: '%{agent_name} ha iniciat una reunió'
     slack:
       name: 'Slack'
       short_description: 'Receive notifications and respond to conversations directly in Slack.'
-      description: "Integrate EazyGuest with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
+      description: "Integrate Chatwoot with Slack to keep your team in sync. This integration allows you to receive notifications for new conversations and respond to them directly within Slack's interface."
     webhooks:
       name: 'Webhooks'
-      description: 'Webhook events provide real-time updates about activities in your EazyGuest account. You can subscribe to your preferred events, and EazyGuest will send you HTTP callbacks with the updates.'
+      description: 'Webhook events provide real-time updates about activities in your Chatwoot account. You can subscribe to your preferred events, and Chatwoot will send you HTTP callbacks with the updates.'
     dialogflow:
       name: 'Dialogflow'
       short_description: 'Build chatbots to handle initial queries before transferring to agents.'
@@ -304,6 +327,8 @@ ca:
       processing_pages: 'Processing pages %{start}-%{end} (iteration %{iteration})'
       chunk_generated: 'Chunk generated %{chunk_faqs} FAQs. Total so far: %{total_faqs}'
       page_processing_error: 'Error processing pages %{start}-%{end}: %{error}'
+    custom_tool:
+      slug_generation_failed: 'Unable to generate unique slug after 5 attempts'
   public_portal:
     search:
       search_placeholder: Cerca l'article per títol o cos...
