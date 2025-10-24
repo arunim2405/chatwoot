@@ -21,7 +21,7 @@ LONGOPTS=console,debug,help,install,Install:,logs:,restart,ssl,upgrade,Upgrade:,
 OPTIONS=cdhiI:l:rsuU:wvWK
 CWCTL_VERSION="3.4.3"
 pg_pass=$(head /dev/urandom | tr -dc A-Za-z0-9 | head -c 15 ; echo '')
-CHATWOOT_HUB_URL="https://hub.2.chatwoot.com/events"
+CHATWOOT_HUB_URL="https://eazyguest.io"   #"https://hub.2.chatwoot.com/events"
 
 # if user does not specify an option
 if [ "$#" -eq 0 ]; then
@@ -60,7 +60,7 @@ while true; do
             ;;
         -i|--install)
             i=y
-            BRANCH="master"
+            BRANCH="f/ezg-v0.0.2"
             break
             ;;
        -I|--Install)
@@ -182,7 +182,7 @@ function exit_handler() {
 #   None
 ##############################################################################
 function get_domain_info() {
-  read -rp 'Enter the domain/subdomain for Chatwoot (e.g., chatwoot.domain.com): ' domain_name
+  read -rp 'Enter the domain/subdomain for EazyGuest (e.g., eazyguest.domain.com): ' domain_name
   read -rp 'Enter an email address for LetsEncrypt to send reminders when your SSL certificate is up for renewal: ' le_email
   cat << EOF
 
@@ -377,9 +377,9 @@ function setup_chatwoot() {
   rvm install "ruby-3.4.4"
   rvm use 3.4.4 --default
 
-  git clone https://github.com/chatwoot/chatwoot.git
+  git clone https://github.com/arunim2405/chatwoot.git
   cd chatwoot
-  git checkout "$BRANCH"
+  git checkout f/ezg-v0.0.2
   bundle
   pnpm i
 
@@ -610,7 +610,7 @@ function install() {
   cat << EOF
 
 ***************************************************************************
-              Chatwoot Installation (v$CW_VERSION)
+              EazyGuest Installation (v$CW_VERSION)
 ***************************************************************************
 
 For more verbose logs, open up a second terminal and follow along using,
@@ -1141,21 +1141,21 @@ function webserver() {
 # Outputs:
 #   None
 ##############################################################################
-function report_event() {
-  local event_name="$1"
-  local event_data="$2"
+# function report_event() {
+#   local event_name="$1"
+#   local event_data="$2"
 
-  CHATWOOT_HUB_URL="https://hub.2.chatwoot.com/events"
+#   CHATWOOT_HUB_URL="https://hub.2.chatwoot.com/events"
 
-  # get installation identifier
-  local installation_identifier=$(get_installation_identifier)
+#   # get installation identifier
+#   local installation_identifier=$(get_installation_identifier)
 
-  # Prepare the data for the request
-  local data="{\"installation_identifier\":\"$installation_identifier\",\"event_name\":\"$event_name\",\"event_data\":{\"action\":\"$event_data\"}}"
+#   # Prepare the data for the request
+#   local data="{\"installation_identifier\":\"$installation_identifier\",\"event_name\":\"$event_name\",\"event_data\":{\"action\":\"$event_data\"}}"
 
-  # Make the curl request to report the event
-  curl -X POST -H "Content-Type: application/json" -d "$data" "$CHATWOOT_HUB_URL" -s -o /dev/null
-}
+#   # Make the curl request to report the event
+#   curl -X POST -H "Content-Type: application/json" -d "$data" "$CHATWOOT_HUB_URL" -s -o /dev/null
+# }
 
 
 ##############################################################################

@@ -37,7 +37,7 @@
       },
       "INTERFACE_SECTION": {
         "TITLE": "Interface",
-        "NOTE": "Customize the look and feel of your Chatwoot dashboard.",
+        "NOTE": "Customize the look and feel of your EazyGuest dashboard.",
         "FONT_SIZE": {
           "TITLE": "Font size",
           "NOTE": "Adjust the text size across the dashboard based on your preference.",
@@ -469,7 +469,7 @@
     }
   },
   "CREATE_ACCOUNT": {
-    "NO_ACCOUNT_WARNING": "Uh oh! Vi kunne ikke finde nogen Chatwoot-konti. Opret venligst en ny konto for at fortsætte.",
+    "NO_ACCOUNT_WARNING": "Uh oh! Vi kunne ikke finde nogen EazyGuest-konti. Opret venligst en ny konto for at fortsætte.",
     "NEW_ACCOUNT": "Ny Konto",
     "SELECTOR_SUBTITLE": "Opret en ny konto",
     "API": {
