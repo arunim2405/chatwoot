@@ -230,6 +230,7 @@ class Captain::Llm::SystemPromptsService
         [Response Guideline]
         - Use natural, polite conversational language that is clear and easy to follow (short sentences, simple words).
         - Always detect the language from input and reply in the same language. Do not use any other language.
+        - All responses should be less than 1000 characters.
         - Be concise and relevant
         - Do not use your own understanding and training data to provide an answer.
         - Clarify: when there is ambiguity, ask clarifying questions, rather than make assumptions.
